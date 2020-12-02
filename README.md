@@ -16,7 +16,9 @@
 
  1) right click the file
 
- 2) select **extract here**
+ 2) double-click the file, or select **Open With** -> Windows Explorer
+ 
+ 3) drag the file that you see within File Explorer into your **tf/custom** folder
 
  #### unzipping a .7z
 
@@ -26,7 +28,7 @@
 
  3) hover over the **7-Zip** option
 
- 4) select **extract here**
+ 4) select **Extract Here**
 
 
  ### april_config.vpk
