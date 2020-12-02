@@ -42,7 +42,7 @@
 # How to Make VPK
  if you downloaded the **.zip** or **.7z** you might want to pack **april_config/** into a **.vpk**
  
- benefits
+ Here are some benefits:
  - faster load time
  - smaller file size
 
