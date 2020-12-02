@@ -14,17 +14,17 @@
 
  #### unzipping a .zip
 
- 1) right-click the file
+ 1) **right-click** the file
 
- 2) double-click the file, or select **Open With** -> Windows Explorer
+ 2) select **Open With** -> Windows Explorer
  
  3) drag the file that you see within File Explorer into your **tf/custom** folder
 
  #### unzipping a .7z
 
- 1) install 7zip from [here](https://www.7-zip.org/download.html)
+ 1) install **7zip** from [here](https://www.7-zip.org/download.html)
 
- 2) right click the file
+ 2) right-click the file
 
  3) hover over the **7-Zip** option
 
@@ -55,11 +55,11 @@
  NOTE: do **NOT** pack **hud/** -- this causes bugs
 
 
- # hacking
-  you can unpack april_config.vpk using tools like GCFScape
+ # Hacking
+  you can unpack **april_config.vpk** using tools like GCFScape
 
-  1) install GCFScape
+  1) install **GCFScape**
 
-  2) right-click the **.vpk** file and hit **Open With**, then select GCFScape from either the menu or by searching File Explorer
+  2) **right-click** the **.vpk** file and hit **Open With**, then select GCFScape from either the menu or by searching File Explorer
 
   3) just drag the **root** folder in the left panel into a directory of your choice
