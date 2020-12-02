@@ -60,6 +60,6 @@
 
   1) install GCFScape
 
-  2) right-click the .vpk file and hit **Open With**, then select GCFScape from either the menu or by searching File Explorer
+  2) right-click the **.vpk** file and hit **Open With**, then select GCFScape from either the menu or by searching File Explorer
 
   3) just drag the **root** folder in the left panel into a directory of your choice
