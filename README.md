@@ -46,7 +46,7 @@
  - faster load time
  - smaller file size
 
- 1) go to **Team Fortress/bin** and find **vpk.exe**
+ 1) go to **Team Fortress 2/bin** and find **vpk.exe**
  
  2) drag and drop **april_config/** onto **vpk.exe**
 
