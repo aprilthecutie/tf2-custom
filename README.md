@@ -1,5 +1,9 @@
 # How to Install
 
+ #### Notes
+ this config uses preloading for some mods.
+ download the map [here](https://www.dropbox.com/s/swgl0x110jatxi2/preload_room.bsp?dl=0)
+
  ### custom.7z or custom.zip
 
  1) go to [Releases](https://github.com/aprilthecutie/tf2-custom/releases)
