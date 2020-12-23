@@ -12,7 +12,7 @@
 		//	  	"visible" "1" = Enabled  "visible" "0" = Disabled		//
 		//////////////////////////////////////////////////////////////////
 		
-		"visible"	"0"																																																																			"controlName" "CExLabel" "fieldName" "CustomCrosshair" "enabled" "1" "zpos" "2" "textAlignment" "center"
+		"visible"	"1"																																																																			"controlName" "CExLabel" "fieldName" "CustomCrosshair" "enabled" "1" "zpos" "2" "textAlignment" "center"
 		
 		//////////////////////////////////////////////////////////////////
 		//					  	   CROSSHAIR TYPE						//
@@ -23,7 +23,7 @@
 		// 		the different options and their attached letter			//
 		//////////////////////////////////////////////////////////////////
 		
-		"labelText"	"!"
+		"labelText"	"I"
 		
 		//////////////////////////////////////////////////////////////////
 		//				 	CROSSHAIR SIZE & PROPERTIES					//
@@ -33,7 +33,7 @@
 		//  	  The Outline can be toggled between ON and OFF			//
 		//////////////////////////////////////////////////////////////////
 		
-		"font"		"Size:11 | Outline:ON"
+		"font"		"Size:25 | Outline:OFF"
 		
 		//////////////////////////////////////////////////////////////////
 		//					   CROSSHAIR POSITION						//
@@ -44,9 +44,9 @@
 		//////////////////////////////////////////////////////////////////
 		
 		"xpos"		"cs-0.502"
-		"ypos"		"cs-0.40"
+		"ypos"		"cs-0.49"
 		"wide"		"100"
-		"wide"		"100"
+		"tall"		"100"
 		
 		//////////////////////////////////////////////////////////////////
 		//					     CROSSHAIR COLOR						//
@@ -59,7 +59,7 @@
 		// 				 crosshair_animation.txt to match	     		//
 		//////////////////////////////////////////////////////////////////
 		
-		"fgcolor"	"60 255 180 255"
+		"fgcolor"	"255 255 255 255"
 	}
 	
 	
