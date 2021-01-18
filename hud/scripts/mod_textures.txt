@@ -1591,7 +1591,7 @@
 		
 		"obj_status_upgrade_1"
 		{
-			"file"	"HUD/hud_upgrade_1"
+			"file"	"vgui/logos/build icons/obj_status_upgrade_1"
 			"x"		"0"
 			"y"		"0"
 			"width"		"64"
@@ -1599,7 +1599,7 @@
 		}
 		"obj_status_upgrade_2"
 		{
-			"file"	"HUD/hud_upgrade_2"
+			"file"	"vgui/logos/build icons/obj_status_upgrade_2"
 			"x"		"0"
 			"y"		"0"
 			"width"		"64"
@@ -1607,13 +1607,12 @@
 		}
 		"obj_status_upgrade_3"
 		{
-			"file"	"HUD/hud_upgrade_3"
+			"file"	"vgui/logos/build icons/obj_status_upgrade_3"
 			"x"		"0"
 			"y"		"0"
 			"width"		"64"
 			"height"	"64"
 		}
-		
 		"obj_status_sapper"
 		{
 			"file"	"vgui/logos/build icons/hud_obj_status_sapper"

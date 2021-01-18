@@ -1,88 +1,91 @@
 "Resource/UI/HudPlayerHealth.res"
-{	
-	// player health data
+{
 	"HudPlayerHealth"
 	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"HudPlayerHealth"
-		"xpos"			"c-240"
-		"ypos"			"c47"
-		"zpos"			"2"
-		"wide"			"250"
-		"tall"			"150"
-		"visible"		"1"
-		"enabled"		"1"	
-		"HealthBonusPosAdj"	"35"
-		"HealthDeathWarning"	"0.49"
-		"HealthDeathWarningColor"	"HUDDeathWarning"
+		"ControlName"           					"EditablePanel"
+		"fieldName"	            					"HudPlayerHealth"
+		"xpos"		               					"0"
+		"xpos_minmode"		               			"0"
+		"ypos"		               					"0"
+		"ypos_minmode"		               			"0"
+		"zpos"		               					"2"
+		"wide"		              					"f0"
+		"tall"			           				 	"480"
+		"visible"	              					"1"
+		"enabled"		           					"1"	
+		"HealthBonusPosAdj"     					"35"
+		"HealthDeathWarning"    					"0.49"
+		"HealthDeathWarningColor"					"HUDDeathWarning"
+	}
+	
+	"HEALTHAnchor"									//Moves the health
+	{
+		"ControlName"								"EditablePanel"
+		"fieldName"									"HEALTHAnchor"
+		"xpos"										"c-135"
+		"xpos_minmode"								"c-95"
+		"ypos"										"c85"
+		"ypos_minmode"								"c40"
+		"zpos"										"0"
+		"wide"										"2"
+		"tall"										"50"
+		"visible"									"0"
+		"enabled"									"1"
 	}
 	
 	"PlayerStatusHealthValue"
 	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"PlayerStatusHealthValue"
-		"xpos"			"50"
-		"ypos"			"30"
-		"zpos"			"5"
-		"wide"			"90"
-		"tall"			"50"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"%Health%"
-		"textAlignment"	"east"	
-		"font"			"nüBold38"
-		"fgcolor"		"Health"
+		"ControlName"	           				 	"CExLabel"
+		"fieldName"	  	         				 	"PlayerStatusHealthValue"
+		"xpos"		    	         				"0"
+		"xpos_minmode"		    	         		"0"
+		"ypos"		    	         				"0"	
+		"zpos"		    	         				"5"
+		"wide"		    	         				"150"
+		"tall"		    	         				"50"
+		"visible"		  	         				"1"
+		"enabled"	  		         				"1"
+		"labelText" 		         				"%Health%"
+		"textAlignment"         				 	"center"	
+		"font"                   				 	"Game 45"
+		"font_minmode"                   			"Game 32"
+		"fgcolor"	    	         				"Health Numbers"
 		
+		"pin_to_sibling"							"HealthAnchor"
+		"pin_corner_to_sibling"						"PIN_CENTER_TOP"
+		"pin_to_sibling_corner"						"PIN_CENTER_TOP"
 	}
 	
 	"PlayerStatusHealthValueShadow"
 	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"PlayerStatusHealthValueShadow"
-		"xpos"			"1"
-		"ypos"			"-1"
-		"zpos"			"5"
-		"wide"			"90"
-		"tall"			"50"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"%Health%"
-		"textAlignment"	"east"	
-		"font"			"nüBoldShadow38"
-		"fgcolor"		"ShadowBlack"
-
-		"pin_to_sibling"	"PlayerStatusHealthValue"
-		"pin_corner_to_sibling"	"1"
-        "pin_to_sibling_corner"	"1"
+		"ControlName"	           				 	"CExLabel"
+		"fieldName"	  	         				 	"PlayerStatusHealthValueShadow"
+		"xpos"	    		         				"-1"
+		"ypos"	    		         				"-1"	
+		"zpos"	    		         				"5"
+		"wide"		    	         				"151"
+		"wide_minmode"								"150"
+		"tall"		    	         				"51"
+		"tall_minmode"								"50"
+		"visible"	    	         				"1"
+		"enabled"	    	         				"1"
+		"labelText"	  	         				 	"%Health%"
+		"textAlignment"	         				 	"center"	
+		"font"                   				 	"Game 45 Blur"
+		"font_minmode"                   			"Game 32 Blur"
+		"fgcolor"	     	         				"Shadow"
 		
-		
-	}
-	
-	"PlayerStatusHealthBG"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"PlayerStatusHealthBG"
-		"xpos"			"16"
-		"ypos"			"-10"
-		"zpos"			"3"
-		"wide"			"72"
-		"tall"			"32"
-		"visible"		"1"
-		"enabled"		"1"
-		"bgcolor_override"	"Blank"
-		"PaintBackgroundType"	"2"
-
-		"pin_to_sibling"	"PlayerStatusHealthValue"
-		"pin_corner_to_sibling"	"PIN_CENTER_BOTTOM"
-		"pin_to_sibling_corner"	"PIN_CENTER_BOTTOM"
+		"pin_to_sibling" 							"PlayerStatusHealthValue"
 	}
 	
 	"PlayerStatusAnchor"
 	{
 		"ControlName"				         		"EditablePanel"
 		"fieldName"				         			"PlayerStatusAnchor"
-		"xpos"					         			"-10"
-		"ypos"					         			"-14"
+		"xpos"					         			"-5"
+		"xpos_minmode"					         	"-10"
+		"ypos"					         			"-12"
+		"ypos_minmode"					         	"-16"
 		"wide"					         			"30"
 		"tall"					         			"30"
 		"visible"				         			"1"
@@ -101,7 +104,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -120,7 +125,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -139,9 +146,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -160,9 +167,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -181,9 +188,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -202,9 +209,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -224,9 +231,9 @@
 		"ypos_minmode"					         	"0"
 		"zpos"					         			"7"
 		"wide"					         			"15"
-
+		"wide_minmode"					         	"12"
 		"tall"					         			"15"
-
+		"tall_minmode"					         	"12"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -246,9 +253,9 @@
 		"ypos_minmode"					         	"0"
 		"zpos"					         			"7"
 		"wide"					         			"15"
-
+		"wide_minmode"					         	"12"
 		"tall"					         			"15"
-
+		"tall_minmode"					         	"12"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -268,9 +275,9 @@
 		"ypos_minmode"					         	"0"
 		"zpos"					         			"7"
 		"wide"					         			"15"
-
+		"wide_minmode"					         	"12"
 		"tall"					         			"15"
-
+		"tall_minmode"					         	"12"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -290,9 +297,9 @@
 		"ypos_minmode"					         	"0"
 		"zpos"					         			"7"
 		"wide"					         			"15"
-
+		"wide_minmode"					         	"12"
 		"tall"					         			"15"
-
+		"tall_minmode"					         	"12"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -312,9 +319,9 @@
 		"ypos_minmode"					         	"0"
 		"zpos"					         			"7"
 		"wide"					         			"15"
-
+		"wide_minmode"					         	"12"
 		"tall"					         			"15"
-
+		"tall_minmode"					         	"12"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -334,9 +341,9 @@
 		"ypos_minmode"					         	"0"
 		"zpos"					         			"7"
 		"wide"					         			"15"
-
+		"wide_minmode"					         	"12"
 		"tall"					         			"15"
-
+		"tall_minmode"					         	"12"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -355,9 +362,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -376,9 +383,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -397,9 +404,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -418,9 +425,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -439,9 +446,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"0"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -460,9 +467,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -481,9 +488,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -502,9 +509,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -523,9 +530,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -544,9 +551,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -565,9 +572,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -586,9 +593,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -607,9 +614,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -628,9 +635,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -648,9 +655,9 @@
 		"ypos"						         		"0"
 		"zpos"						         		"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"					         		"1"
 		"enabled"					         		"1"
 		"scaleImage"				         		"1"
@@ -669,9 +676,9 @@
 		"ypos"						         		"0"
 		"zpos"						         		"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"					         		"1"
 		"enabled"					         		"1"
 		"scaleImage"				         		"1"
@@ -690,9 +697,9 @@
 		"ypos"						         		"0"
 		"zpos"						         		"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"					         		"1"
 		"enabled"					         		"1"
 		"scaleImage"				         		"1"
@@ -711,9 +718,9 @@
 		"ypos"					         			"0"
 		"zpos"					         			"7"
 		"wide"					         			"26"
-
+		"wide_minmode"					         	"16"
 		"tall"					         			"26"
-
+		"tall_minmode"					         	"16"
 		"visible"				         			"1"
 		"enabled"				         			"1"
 		"scaleImage"				         		"1"	
@@ -724,33 +731,44 @@
 		"pin_to_sibling_corner"			         	"1"
 	}
 	
+	
+	
+	
+	
 	"PlayerStatusHealthImage"
 	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"PlayerStatusHealthImage"
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		"enabled"		"0"
+		"ControlName" 	         				 	"ImagePanel"
+		"fieldName"		          				 	"PlayerStatusHealthImage"
+		"wide"		    	         				"0"
+		"tall"                   				 	"0"
+		"visible"		             				"0"
+		"enabled"		             				"0"
 	}
-	
-	"PlayerStatusHealthImageBG"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"PlayerStatusHealthImageBG"
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		"enabled"		"0"
-	}
-	
 	"PlayerStatusHealthBonusImage"
 	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"PlayerStatusHealthBonusImage"
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		"enabled"		"0"
+		"ControlName"	         				 	"ImagePanel"
+		"fieldName"		         				 	"PlayerStatusHealthBonusImage"
+		"wide"			         				 	"0"
+		"tall"			         				 	"0"
+		"visible"		         				 	"0"
+		"enabled"		         				 	"0"
+	}
+	"PlayerStatusHealthImageBG"
+	{
+		"ControlName"	           				 	"ImagePanel"
+		"fieldName"	  	         				 	"PlayerStatusHealthImageBG"
+		"wide"		    	          				"0"
+		"tall"         				 				"0"
+		"visible"         				 			"0"
+		"enabled"	            				 	"0"
+	}
+	"PlayerStatusMaxHealthValue"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"PlayerStatusMaxHealthValue"
+		"wide"		    	          				"0"
+		"tall"         				 				"0"
+		"visible"         				 			"0"
+		"enabled"	            				 	"0"
 	}
 }

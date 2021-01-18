@@ -1,9 +1,18 @@
-# sammyhud
- 
-**Edited version of axhud.**
+![Logo](https://i.imgur.com/oG7xN4t.png)
 
-# credits
-**Alex_f the original creator of [axhud](https://huds.tf/forum/showthread.php?tid=925)**
+**Material Design Team Fortress 2 Hud by Hypnotize**
 
-# customization
-**Customization options are in the customization folder in the hud directory**
+<a>LINKS</a>
+====
+
+[Screenshots](https://imgur.com/a/4sgZ1)
+
+[Huds.tf](https://huds.tf/forum/showthread.php?tid=668)
+
+[HUD Wiki](https://github.com/Hypnootize/Hypnotize-Hud/wiki)
+
+[HUD Installation](https://github.com/Hypnootize/Hypnotize-Hud/wiki/Installation)
+
+[HUD Customization](https://github.com/Hypnootize/Hypnotize-Hud/wiki/Customization)
+
+[Credits](https://github.com/Hypnootize/Hypnotize-Hud/wiki/Credits)

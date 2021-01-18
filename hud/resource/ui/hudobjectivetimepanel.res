@@ -2,291 +2,124 @@
 {	
 	"TimePanelBG"
 	{
-		"ControlName"		"ScalableImagePanel"
-		"fieldName"		"TimePanelBG"
-		"xpos"			"9999"
-		"ypos"			"9999"
-		"zpos"			"2"
-		"wide"			"40"
-		"tall"			"4"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"../hud/objectives_timepanel_blue_bg"	
-		"scaleImage"		"1"
+		"ControlName"								"CTFImagePanel"
+		"fieldName"									"TimePanelBG"
+		"xpos"										"2"
+		"ypos"										"3"
+		"zpos"										"2"
+		"wide"										"15"
+		"tall"										"15"
+		"visible"									"1"
+		"enabled"									"1"
 		
-		"src_corner_height"		"3"
-		"src_corner_width"		"3"
+		"image"										"replay/thumbnails/game/clock_white"
+		"scaleImage"								"1"
+		"teambg_1"									"replay/thumbnails/game/clock_white"
+		"teambg_2"									"replay/thumbnails/game/clock_red"
+		"teambg_3"									"replay/thumbnails/game/clock_blue"
 		
-		"draw_corner_width"		"0"
-		"draw_corner_height" 	"0"
-		
-		if_match
-		{
-			"visible"	"0"
-		}
+		"src_corner_height"							"0"
+		"src_corner_width"							"0"
+		"draw_corner_width"							"0"
+		"draw_corner_height" 						"0"
 	}
-
-	"TimePanelBG2"
+	
+	"ServerTimeLimitLabel"
 	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"TimePanelBG2"
-		"xpos"			"30"
-		"ypos"			"0"
-		"zpos"			"2"
-		"wide"			"40"
-		"tall"			"4"
-		"visible"		"1"
-		"enabled"		"1"
-		"scaleImage"		"1"
-		"image"			"replay/thumbnails/blank"
-		"teambg_2"		"replay/thumbnails/bg_red"
-		"teambg_3"		"replay/thumbnails/bg_blu"
+		"ControlName" 								"CExLabel"
+		"fieldName" 								"ServerTimeLimitLabel"
+		"xpos" 										"11"
+		"ypos" 										"20"
+		"zpos" 										"3"
+		"wide" 										"50"
+		"tall"										"15"
+		"visible" 									"1"
+		"enabled" 									"1"
+		"labelText"									"%servertimeleft%"
+		"textAlignment"								"center"
+		"dulltext" 									"0"
+		"brighttext" 								"0"
+		"wrap" 										"0"
+		"font" 										"Size 10"
+		"fgcolor"									"White"
 		
-		if_match
+		if_mvm
 		{
-			"visible"	"0"
+			"visible"								"0"
 		}
 	}
-
+	
+	"OvertimeLabel"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"OvertimeLabel"
+		"xpos"										"20"
+		"ypos"										"14"
+		"zpos"										"5"
+		"wide"										"78"
+		"tall"										"19"
+		"visible"									"0"
+		"enabled"									"1"
+		"AllCaps"									"1"
+		"labelText"									"#game_Overtime"
+		"textAlignment"								"west"
+		"font"										"Size 10"
+	}
+	
+	
+	//REMOVED
 	"TimePanelProgressBar"
 	{
-		"ControlName"			"CTFProgressBar"
-		"fieldName"			"TimePanelProgressBar"
-		"xpos"				"67"
-		"ypos"				"16"
-		"zpos"				"4"	
-		"wide"				"20"
-		"tall"				"20"
-		"visible"			"0"
-		"enabled"			"1"
-		"scaleImage"			"1"
-		"image"				"../hud/objectives_timepanel_progressbar"
-		"color_active"			"TimerProgress.Active"
-		"color_inactive"		"TimerProgress.InActive"
-		"color_warning"			"TimerProgress.Warning"
-		"percent_warning"		"0.75"
-		
-		if_match
-		{
-			"visible"	"0"
-		}
+		"ControlName"								"CTFProgressBar"
+		"fieldName"									"TimePanelProgressBar"
+		"xpos"										"9999"
 	}
 	"WaitingForPlayersLabel"
 	{
-		"ControlName"		"CExLabel"
-		"fieldName"		"WaitingForPlayersLabel"
-		"xpos"			"0"
-		"ypos"			"20"
-		"zpos"			"5"
-		"wide"			"100"
-		"tall"			"10"
-		"visible"		"0"
-		"enabled"		"1"
-		"labelText"		"#game_WaitingForPlayers"
-		"textAlignment"		"center"
-		"dulltext"		"0"
-		"brighttext"		"0"
-		"wrap"			"0"
-		"font"			"nü10"
-		"fgcolor"		"nüWhite"
-		
-
-		if_match
-		{
-			"ypos"					"25"
-		}
-	}			
+		"ControlName"								"CExLabel"
+		"fieldName"									"WaitingForPlayersLabel"
+		"xpos"										"9999"
+	}
 	"WaitingForPlayersBG"
 	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"WaitingForPlayersBG"
-		"xpos"			"9999"
-		"ypos"			"9999"
-		"zpos"			"1"
-		"wide"			"78"
-		"tall"			"20"
-		"tall_minmode"	"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"../hud/objectives_timepanel_suddendeath"	
-		"scaleImage"		"1"
-		
-		if_match
-		{
-			"wide"	"0"
-		}
+		"ControlName"								"CTFImagePanel"
+		"fieldName"									"WaitingForPlayersBG"
+		"xpos"										"9999"
 	}
-	"OvertimeLabel"
-	{
-		"ControlName"		"CExLabel"
-		"fieldName"		"OvertimeLabel"
-		"xpos"			"0"
-		"ypos"			"20"
-		"zpos"			"5"
-		"wide"			"100"
-		"tall"			"10"
-		"visible"		"0"
-		"enabled"		"1"
-		"labelText"		"#game_Overtime"
-		"textAlignment"		"center"
-		"dulltext"		"0"
-		"brighttext"		"0"
-		"wrap"			"0"
-		"font"			"nü10"
-		"fgcolor"		"nüWhite"
-		
-		if_match
-		{
-			"ypos"					"25"
-		}
-	}			
 	"OvertimeBG"
 	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"OvertimeBG"
-		"xpos"			"9999"
-		"ypos"			"9999"
-		"zpos"			"1"
-		"wide"			"78"
-		"tall"			"20"
-		"tall_minmode"	"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"../hud/objectives_timepanel_suddendeath"	
-		"scaleImage"		"1"	
-		
-		if_match
-		{
-			"wide"	"0"
-		}
+		"ControlName"								"CTFImagePanel"
+		"fieldName"									"OvertimeBG"
+		"xpos"										"9999"
 	}
 	"SuddenDeathLabel"
 	{
-		"ControlName"		"CExLabel"
-		"fieldName"		"SuddenDeathLabel"
-		"xpos"			"0"
-		"ypos"			"20"
-		"zpos"			"5"
-		"wide"			"100"
-		"tall"			"10"
-		"visible"		"0"
-		"enabled"		"1"
-		"labelText"		"#game_SuddenDeath"
-		"textAlignment"		"center"
-		"dulltext"		"0"
-		"brighttext"		"0"
-		"wrap"			"0"
-		"font"			"nü10"
-		"fgcolor"		"nüWhite"
-		
-		if_match
-		{
-			"ypos"					"25"
-		}
-	}			
+		"ControlName"								"CExLabel"
+		"fieldName"									"SuddenDeathLabel"
+		"xpos"										"9999"
+	}	
 	"SuddenDeathBG"
 	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"SuddenDeathBG"
-		"xpos"			"9999"
-		"ypos"			"9999"
-		"zpos"			"1"
-		"wide"			"78"
-		"tall"			"20"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"../hud/objectives_timepanel_suddendeath"	
-		"scaleImage"		"1"	
-		
-		if_match
-		{
-			"wide"	"0"
-		}
+		"ControlName"								"CTFImagePanel"
+		"fieldName"									"SuddenDeathBG"
+		"xpos"										"9999"
 	}	
 	"SetupLabel"
 	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"SetupLabel"
-		"xpos"			"0"
-		"ypos"			"20"
-		"zpos"			"5"
-		"wide"			"100"
-		"tall"			"10"
-		"visible"		"0"
-		"enabled"		"1"
-		"labelText"		"#game_Setup"
-		"textAlignment"		"center"
-		"dulltext"		"0"
-		"brighttext"		"0"
-		"wrap"			"0"
-		"font"			"nü10"
-		"fgcolor"		"nüWhite"
-		
-		if_match
-		{
-			"ypos"					"25"
-		}
+		"ControlName"								"CExLabel"
+		"fieldName"									"SetupLabel"
+		"xpos"										"9999"
 	}	
 	"SetupBG"
 	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"SetupBG"
-		"xpos"			"9999"
-		"ypos"			"9999"
-		"zpos"			"1"
-		"wide"			"78"
-		"tall"			"20"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"../hud/objectives_timepanel_suddendeath"	
-		"scaleImage"		"1"	
-		
-		if_match
-		{
-			"wide"	"0"
-		}
+		"ControlName"								"CTFImagePanel"
+		"fieldName"									"SetupBG"
+		"xpos"										"9999"
 	}
-	"ServerTimeLimitLabel"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"ServerTimeLimitLabel"
-		"xpos"			"0"
-		"ypos"			"18"
-		"zpos"			"5"
-		"wide"			"100"
-		"tall"			"14"
-		"visible"		"0"
-		"enabled"		"1"
-		"labelText"		"%servertimeleft%"
-		"textAlignment"		"center"
-		"dulltext"		"0"
-		"brighttext"		"0"
-		"wrap"			"0"
-		"font"			"nüMedium10"
-		"fgcolor"		"nüOffWhite"
-		
-		if_match
-		{
-			"ypos"					"25"
-		}
-	}	
 	"ServerTimeLimitLabelBG"
 	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"ServerTimeLimitLabelBG"
-		"xpos"			"9999"
-		"ypos"			"9999"
-		"zpos"			"1"
-		"wide"			"78"
-		"tall"			"20"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"../hud/objectives_timepanel_suddendeath"	
-		"scaleImage"		"1"	
-		
-		if_match
-		{
-			"wide"	"0"
-		}
-	}
+		"ControlName"								"CTFImagePanel"
+		"fieldName"									"ServerTimeLimitLabelBG"
+		"xpos"										"9999"
+	}	
 }

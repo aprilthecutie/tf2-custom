@@ -1,70 +1,31 @@
+////////////////////////////////////////////////////////////////
+//DON'T TOUCH ANY OF THIS UNLESS YOU KNOW WHAT YOU ARE DOING!//
+///////////////////////////////////////////////////////////////
 
-// Select a font to use
-//------------------------------------------
+///////////////////////////////////////////
+///////////////////COLORS//////////////////
+///////////////////////////////////////////
 
-	#base "../resource/scheme/fonts_reno.res"
-	
-// Do not change these
-//------------------------------------------
+#base "../resource/scheme/colors.res"
+#base "../customizations/colors.res"
 
-	#base "scheme/basesettings.res"
-	#base "scheme/borders.res"
-	#base "scheme/colors.res"
-	#base "scheme/crosshairs.res"
-	#base "scheme/symbols.res"
-	#base "../resource/crosshairs/crosshair_scheme.res"
-	
+///////////////////////////////////////////
+////////////////////FONTS//////////////////
+///////////////////////////////////////////
 
-//------------------------------------------
+#base "../customizations/alternative fonts.res"
+#base "../resource/scheme/fonts.res"
+#base "../resource/scheme/symbols.res"
 
-Scheme
-{
+///////////////////////////////////////////
+//////////////////BORDERS//////////////////
+///////////////////////////////////////////
 
+#base "../resource/scheme/borders.res"
 
-	
-	CustomFontFiles
-	{
-		"1" "resource/tf.ttf"
-		"2" "resource/tfd.ttf"
-		"3"
-		{
-			"font" "resource/TF2.ttf"
-			"name" "TF2"
-		}
-		"4" 
-		{
-			"font" "resource/TF2Secondary.ttf"
-			"name" "TF2 Secondary"
-		}
-		"5" 
-		{
-			"font" "resource/TF2Professor.ttf"
-			"name" "TF2 Professor"
-		}
-		"6" 
-		{
-			"font" "resource/TF2Build.ttf"
-			"name" "TF2 Build"
-		}
-		"7"
-		{
-			"font" "resource/fonts/Blocks.ttf"
-			"name" "Blocks"
-		}
-		"8" 
-		{
-			"font" "resource/fonts/HudasIscariote.otf"
-			"name" "Hudas Iscariote"
-		}
-		"9"
-		{
-			"font" "resource/fonts/Renogare.ttf" [$WINDOWS]
-			"name" "Renogare Soft"
-		}
-		"10"
-		{
-			"font" "resource/fonts/Renogare Numbers.otf"
-			"name" "Renogare Numbers"
-		}
-	}
-}
+///////////////////////////////////////////
+////////////////CROSSHAIRS/////////////////
+///////////////////////////////////////////
+
+#base "../resource/scheme/crosshairs.res"
+//#base "../resource/scheme/crosshairs_blur.res"

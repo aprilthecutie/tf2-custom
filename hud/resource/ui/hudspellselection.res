@@ -1,109 +1,91 @@
 "Resource/UI/HudSpellSelection.res"
-{		
-	"ItemEffectMeterBG"
-	{
-		"ControlName"	"CTFImagePanel"
-		"fieldName"		"ItemEffectMeterBG"
-		"xpos"			"9999"
-		"ypos"			"9999"
-		"xpos_minmode"	"0"
-		"ypos_minmode"	"10"
-		"wide"			"80"
-		"tall"			"40"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"../hud/ammo_blue_bg"
-		"scaleImage"	"1"	
-		"teambg_2"		"../hud/ammo_red_bg"
-		"teambg_3"		"../hud/ammo_blue_bg"
-	}
-	
-	"Spellbook"
-	{
-		"ControlName"	"CTFImagePanel"
-		"fieldName"		"Spellbook"
-		"xpos"			"9999"
-		"ypos"			"9999"
-		"zpos"			"0"
-		"wide"			"64"
-		"tall"			"56"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"spellbook_book"
-		"scaleImage"	"1"		
-	}
-	
+{
 	"SpellIcon"
 	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"SpellIcon"
-		"xpos"			"0"
-		"ypos"			"13"
-		"zpos"			"7"
-		"wide"			"25"
-		"tall"			"25"
-		"visible"		"1"
-		"enabled"		"1"
-		"scaleImage"	"1"	
-		"image"			"../signs/death_wheel_whammy"
-		"fgcolor"		"nüWhite"
-	}
-	
-	"ActionText"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"ActionText"
-		"font"			"Default"
-		"labelText"		"%actiontext%"
-		"textAlignment" "west"
-		"xpos"			"4"
-		"ypos"			"0"
-		"wide"			"0"
-		"tall"			"0"
-		"fgcolor"		"tanlight"
-		"visible"		"0"
-	}
-	
-	"SpellText"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"SpellText"
-		"font"			"Default"
-		"labelText"		"%selectedspell%"
-		"textAlignment" "west"
-		"xpos"			"35"
-		"ypos"			"25"
-		"wide"			"100"
-		"tall"			"10"
-		"fgcolor"		"tanlight"
-		"visible"		"0"
-	}
-	
-	"CountTextShadow"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"CountTextShadow"
-		"font"			"nüMediumShadow16"
-		"labelText"		"%counttext%"
-		"textAlignment" "center"
-		"xpos"			"25"
-		"ypos"			"16"
-		"wide"			"20"
-		"tall"			"20"
-		"fgcolor"		"ShadowBlack"
+		"ControlName"								"ImagePanel"
+		"fieldName"									"SpellIcon"
+		"xpos"										"5"
+		"ypos"										"2"
+		"zpos"										"7"
+		"wide"										"15"
+		"tall"										"15"
+		"visible"									"1"
+		"enabled"									"1"
+		"scaleImage"								"1"	
+		"image"										"../signs/death_wheel_whammy"
+		"fgcolor"									"White"
 	}
 	
 	"CountText"
 	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"CountText"
-		"font"			"nüMedium16"
-		"labelText"		"%counttext%"
-		"textAlignment" "center"
-		"xpos"			"25"
-		"ypos"			"15"
-		"wide"			"20"
-		"tall"			"20"
-		"fgcolor"		"240 240 240 255"
+		"ControlName"								"CExLabel"
+		"fieldName"									"CountText"
+		"font"										"Size 20"
+		"labelText"									"%counttext%"
+		"textAlignment" 							"west"
+		"xpos"										"4"
+		"ypos"										"1"
+		"zpos"										"1"
+		"wide"										"20"
+		"tall"										"20"
+		"fgcolor"									"White"
+		
+		"pin_to_sibling" 							"SpellIcon"
+		"pin_corner_to_sibling" 					"PIN_CENTER_LEFT"
+		"pin_to_sibling_corner" 					"PIN_CENTER_RIGHT"
+	}
+	"CountTextShadow"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"CountTextShadow"
+		"font"										"Size 20 Blur"
+		"labelText"									"%counttext%"
+		"textAlignment" 							"west"
+		"xpos"										"-1"
+		"ypos"										"-1"
+		"wide"										"20"
+		"tall"										"20"
+		"fgcolor"									"Shadow"
+		"pin_to_sibling" 							"CountText"
+	}
+	
+	"ActionText"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"ActionText"
+		"font"										"Size 9"
+		"labelText"									"%actiontext%"
+		"textAlignment"							 	"center"
+		"xpos"										"0"
+		"ypos"										"20"
+		"wide"										"40"
+		"tall"										"10"
+		"fgcolor"									"White"
+		"visible"									"1"
+		"visible_minmode"							"1"
+		"AllCaps"									"1"
+	}
+	
+	
+	
+	
+	//REMOVED
+	"ItemEffectMeterBG"
+	{
+		"ControlName"								"CTFImagePanel"
+		"fieldName"									"ItemEffectMeterBG"
+		"xpos"										"9999"
+	}
+	"Spellbook"
+	{
+		"ControlName"								"CTFImagePanel"
+		"fieldName"									"Spellbook"
+		"xpos"										"9999"
+	}
+	"SpellText"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"SpellText"
+		"xpos"										"9999"
 	}
 }
